@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net9.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\FirstSparrow.Application\FirstSparrow.Application.csproj" />
+      <ProjectReference Include="..\FirstSparrow.Infrastructure\FirstSparrow.Infrastructure.csproj" />
+      <ProjectReference Include="..\FirstSparrow.Persistence\FirstSparrow.Persistence.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Update="appsettings.Local.json">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
+      <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.1.0" />
+    </ItemGroup>
+
+</Project>
